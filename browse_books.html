@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books4U 📚 | Browse Books</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 🌸 Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Books4U</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#fiction" onclick="filterBooks('fiction')">Fiction</a>
+        <a href="#nonfiction" onclick="filterBooks('nonfiction')">Non-Fiction</a>
+        <a href="#biography" onclick="filterBooks('biography')">Biography</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌸 Books Section -->
+  <section class="section books">
+    <div class="container">
+      <h2>Book Collection</h2>
+      <div class="genre-filter">
+        <button onclick="filterBooks('all')">All</button>
+        <button onclick="filterBooks('fiction')">Fiction</button>
+        <button onclick="filterBooks('nonfiction')">Non-Fiction</button>
+        <button onclick="filterBooks('biography')">Biography</button>
+      </div>
+
+      <div class="book-grid" id="bookGrid">
+        <!-- Fiction -->
+        <div class="book-card fiction">
+          <img src="sci1.jpg" alt="1984" />
+          <h3>1984</h3>
+          <p>George Orwell</p>
+          <a href="pdfs/1984.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card fiction">
+          <img src="chil1.jpg" alt="The Secret Garden" />
+          <h3>The Secret Garden</h3>
+          <p>Frances Hodgson Burnett</p>
+          <a href="pdfs/tsg.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card fiction">
+          <img src="fic1.jpg" alt="To Kill a Mockingbird" />
+          <h3>To Kill a Mockingbird</h3>
+          <p>Harper Lee</p>
+          <a href="pdfs/mokbird.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card fiction">
+          <img src="nonfic5.jpg" alt="It Only Happens in the Movies" />
+          <h3>It Only Happens in the Movies</h3>
+          <p>Holly Bourne</p>
+          <a href="pdfs/it_only_happens_in_the_movies.pdf" class="download-btn" download>📖 Download PDF</a>
+          
+        </div>
+
+        <!-- Non-Fiction -->
+        <div class="book-card nonfiction">
+          <img src="sci2.jpg" alt="Finding the Mother Tree" />
+          <h3>Finding the Mother Tree</h3>
+          <p>Suzanne Simard</p>
+          <a href="pdfs/ftmt.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card nonfiction">
+          <img src="nonfic4.jpg" alt="Kaizen" />
+          <h3>Kaizen</h3>
+          <p>Japanese Philosophy</p>
+          <a href="pdfs/kaizen.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card nonfiction">
+          <img src="nonfic2.jpg" alt="Build Don't Talk" />
+          <h3>Build Don't Talk</h3>
+          <p>Rajat Garg</p>
+          <a href="pdfs/bdt.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card nonfiction">
+          <img src="nonfic3.jpg" alt="I Want to Die but I Want to Eat Tteokbokki" />
+          <h3>I Want to Die but I Want to Eat Tteokbokki</h3>
+          <p>Baek Se-hee</p>
+          <a href="pdfs/iwtdbiwet.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <!-- Biography -->
+        <div class="book-card biography">
+          <img src="bio2.jpg" alt="The Dhoni Touch" />
+          <h3>The Dhoni Touch</h3>
+          <p>Bharat Sundaresan</p>
+          <a href="pdfs/dhoni.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card biography">
+          <img src="his1.jpg" alt="Gandhi Before India" />
+          <h3>Gandhi Before India</h3>
+          <p>Ramachandra Guha</p>
+          <a href="pdfs/gandhi.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card biography">
+          <img src="bio1.jpg" alt="Ratan Tata" />
+          <h3>Ratan Tata: The Biography</h3>
+          <p>Thomas Mathew</p>
+          <a href="pdfs/tata.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+
+        <div class="book-card biography">
+          <img src="chil2.jpg" alt="Ruskin Bond" />
+          <h3>Ruskin Bond: The Writer</h3>
+          <p>Collection</p>
+          <a href="pdfs/ruskin.pdf" class="download-btn" download>📖 Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🌸 Footer -->
+  <footer id="contact">
+    <p>Made with 💛 by Riya | © 2025 Books4U</p>
+  </footer>
+</body>
+</html>
